@@ -1,0 +1,205 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* font-size: 10px; */
+    background-color: black;
+    color: grey;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+/* ------------------- navigations --------------- */
+
+.navigations {
+    width: 4%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* align-items: center; */
+    background-color: rgb(39, 39, 39);
+}
+
+.chatsName {
+    width: 25%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.chat {
+    width: 70%;
+    border: 2px solid black;
+}
+
+.navigationsSectionOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    width: 100%;
+}
+
+hr {
+    width: 100%;
+}
+
+.navigationsSectionOne a:hover {
+    background: lightgrey;
+    padding: 4px;
+}
+
+.navigationsSectionTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+/* ------------- chats name ---------------- */
+.chatsName {
+    padding: 10px;
+}
+
+.chatsNav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.chatsNav .chatsText {
+    font-size: 25px;
+    color: white;
+}
+
+.chatsNav .chatIcons {
+    display: flex;
+    gap: 30px;
+    font-size: 22px;
+    color: white;
+}
+
+.chatsNav .chatIcons i {
+    color: white;
+}
+
+.chatsName .searchChats {
+    display: flex;
+    position: relative;
+}
+
+.chatsName .searchChats input {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: center; */
+    padding-left: 30px;
+    border-radius: 7px;
+    background-color: rgb(68, 68, 68);
+    color: rgb(210, 204, 204);
+}
+
+.chatsName .searchChats i {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    transform: rotateY(180deg);
+    color: rgb(210, 204, 204);
+    cursor: text;
+}
+
+/* ------------------- chatname div ----------- */
+.contactName {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid wheat;
+    /* max-width: 100%;
+    min-width: 50%;
+    width: 50%; */
+    height: 81vh;
+    margin-top: 3px;
+    padding: 8px;
+    overflow: auto;
+    gap: 15px;
+    scrollbar-width: thin;
+}
+
+.contactName .contactOne {
+    display: flex;
+    /* border: 3px solid wheat; */
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+    /* padding: 5px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.contactName .contactOne:hover {
+    background: rgb(81, 81, 81, 0.6);
+    border-radius: 5px;
+}
+
+.contactOne .image {
+    width: 67px;
+    border: 2px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.image img {
+    width: 66px;
+    height: 7.8vh;
+}
+.more {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* gap: 30px; */
+    height: 100%;
+}
+
+.more .up,
+.more .down {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.more .up .time,
+.more .down .message,
+.more .down .extraIcons {
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(196, 187, 187);
+}
+
+.more .up .name {
+    color: white;
+}
