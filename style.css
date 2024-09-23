@@ -233,7 +233,9 @@ hr {
     padding-left: 20px;
     padding-right: 20px;
     height: 8vh;
-    background: #2C2C2C;
+    background: #222121;
+    padding-top:5px ;
+    padding-bottom: 5px;
 }
 
 .chatNav .intro {
@@ -280,7 +282,7 @@ hr {
 
 .chatNav .contact {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .chatNav .contact .calls a {
@@ -288,7 +290,21 @@ hr {
     /* background:rgba(72, 71, 71, 0.3); */
     color: white;
 }
-
+.chatNav .contact .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:10px ;
+    margin-right:10px;
+    border-radius: 7px;   
+}
+.chatNav .contact .search:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background: rgba(72, 71, 71, 0.4);
+}
 .line {
     width: 2px;
     background: rgb(88, 88, 88, 0.8);
@@ -321,9 +337,7 @@ hr {
     padding: 20px;
 }
 
-.myMessage {
-    /* border: 2px solid white; */
-}
+/* .myMessage {/ */
 
 .myMessage .text {
     display: inline;
